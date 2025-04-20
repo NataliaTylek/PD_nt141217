@@ -1,7 +1,7 @@
 import pytest
 import requests
 
-BASE_URL = "http://127.0.0.1:4000/api/v1.0/predict"
+BASE_URL = "http://127.0.0.1:8080/api/v1.0/predict"
 
 def test_valid_prediction():
     response = requests.get(BASE_URL, params={"x1": 3.0, "x2": 4.0})
